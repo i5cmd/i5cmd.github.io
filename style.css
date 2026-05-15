@@ -1,0 +1,23 @@
+.no-margin {
+    margin: 0;
+}
+
+.light {
+    font-weight: 300;
+}
+
+* {
+    font-family: 'Montserrat';
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Source Code Pro';
+}
+
+#pfp {
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    background-color: gold;
+    border-radius: 100px;
+    border: #00000000 0;
+}
