@@ -1,3 +1,9 @@
+
+body {
+    background-color: #000000;
+    color: white
+}
+
 .no-margin {
     margin: 0;
 }
@@ -17,7 +23,78 @@ h1, h2, h3, h4 {
 #pfp {
     width: 200px;
     aspect-ratio: 1 / 1;
-    background-color: gold;
-    border-radius: 100px;
-    border: #00000000 0;
+    background-color: rgba(255, 217, 0, 0);
+    object-fit: cover;
+    border-radius: 50%;
+    border: #000000be 1px solid;
+    margin: 20px;
+}
+
+#begin, #second {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second {
+    text-align: center;
+}
+
+#second > p {
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+#linkbutton {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 25px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.438);
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#linkbutton:hover {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 25px;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.349);
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    transform: translateY(-5px);
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    gap: 5px;
+}
+
+#linkbutton > img {
+    width: 32px;
+    height: 32px;
+    margin: 5px;
+}
+
+#linkbutton > p {
+    font-size: 16px;
+    margin: 0;
+    color: white;
 }

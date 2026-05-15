@@ -1,7 +1,11 @@
-import { GetFromServer } from "./getelements.js";
+import { SocialManager, socialData } from "./socials.js";
 
-const server: GetFromServer = new GetFromServer();
+const socialButtonContainer: HTMLDivElement = document.getElementById("buttons")! as HTMLDivElement;
 
-const pfp: HTMLImageElement = document.getElementById("#pfp") as HTMLImageElement;
+const data: socialData[] = [
+    {name: "GitHub", icon: "assets/icons/gith.svg", link: "https://github.com/i5cmd"},
+    {name: "GitLab", icon: "assets/icons/gitl.svg", link: "https://gitlab.com/i5cmd"}
+]
 
-pfp.src = await (server.pfp('https://github.com/i5cmd') as Promise<string>);
+const socialManager: SocialManager = new SocialManager(data, socialButtonContainer);
+socialManager.addButtons();
