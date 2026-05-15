@@ -4,6 +4,26 @@ body {
     color: white
 }
 
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    background-size: cover;
+    background-image: url('assets/photos/bg.jpg');
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter:grayscale(1);
+    opacity: 0.4;
+}
+
+.year {
+    min-width: 100px;
+    min-height: 50px;
+}
+
 .no-margin {
     margin: 0;
 }
@@ -30,11 +50,44 @@ h1, h2, h3, h4 {
     margin: 20px;
 }
 
-#begin, #second {
+#begin, #second, #educationsteps {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 0 10px 0;
+}
+
+#educationsteps {
+    height: 40px;
+    margin: 0 0 50px 0;
+    font-size: 12px;
+}
+
+.main {
+    text-decoration: underline;
+}
+
+.yearName {
+    margin: 10px 0 0 0;
+    font-size: 18px;
+}
+
+#line {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 1px;
+    background-color: white;
+}
+
+.step {
+    background-color: rgb(255, 255, 255);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
 }
 
 #second {
@@ -97,4 +150,9 @@ a {
     font-size: 16px;
     margin: 0;
     color: white;
+}
+
+iframe {
+    margin: 10px 0;
+    opacity: 0.8;
 }
