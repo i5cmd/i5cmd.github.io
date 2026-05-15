@@ -1,16 +1,35 @@
+@media only screen and (max-width: 650px) {
+    .album {
+        width: 140px !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .album {
+        width: 100px !important;
+    }
+}
+
 
 body {
     background-color: #000000;
-    color: white
+    color: white;
+    height: 100%;
+}
+
+.p-size {
+    max-width: 800px;
 }
 
 body::before {
     content: '';
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: block;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     background-image: url('assets/photos/bg.jpg');
     height: 100%;
     width: 100%;
@@ -22,6 +41,9 @@ body::before {
 .year {
     min-width: 100px;
     min-height: 50px;
+    text-align: center;
+    position: relative;
+    left: -45px;
 }
 
 .no-margin {
@@ -50,7 +72,7 @@ h1, h2, h3, h4 {
     margin: 20px;
 }
 
-#begin, #second, #educationsteps {
+#begin, #second, #educationsteps, #aboutme {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -58,10 +80,53 @@ h1, h2, h3, h4 {
     margin: 0 0 10px 0;
 }
 
+.sectiontitle {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+#aboutme > p {
+    text-align: center;
+    line-height: 125%;
+}
+
+br {
+    margin: 0 0 4px 0;
+}
+
+.sectiontitle::after {
+    content: "";
+    width: 75%;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 300px;
+    height: 1px;
+}
+
 #educationsteps {
     height: 40px;
     margin: 0 0 50px 0;
     font-size: 12px;
+}
+
+.album {
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 200px;
+    aspect-ratio: 1 / 1;
+    padding: 0;
+    border-radius: 12px;
+    border: 0;
+    outline: 1px solid rgba(255, 255, 255, 0.336);
+    filter: grayscale(1);
+    transition: all 0.25s;
+    cursor: pointer;
+}
+
+.album:hover {
+    filter: grayscale(0);
+    transition: all 0.25s;
+    transform: translateY(-5px);
 }
 
 .main {
@@ -152,7 +217,8 @@ a {
     color: white;
 }
 
-iframe {
-    margin: 10px 0;
-    opacity: 0.8;
+#albumContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
