@@ -2,6 +2,21 @@
     .album {
         width: 140px !important;
     }
+    .program-container {
+        width: 100px !important;
+    }
+    .program-container > img {
+        width: 80px !important;
+    }
+    .program-container > p {
+        max-width: 200px;
+        font-size: 12px !important;
+    }
+
+    .program-container > h3 {
+        margin: 0 0 4px 0;
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 450px) {
@@ -72,7 +87,7 @@ h1, h2, h3, h4 {
     margin: 20px;
 }
 
-#begin, #second, #educationsteps, #aboutme, #hardware {
+#begin, #second, #educationsteps, #aboutme, #hardware, #software {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -179,7 +194,7 @@ a {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.336);
     cursor: pointer;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 
 #linkbutton:hover {
@@ -194,7 +209,7 @@ a {
     border: 1px solid rgba(255, 255, 255, 0.548);
     transform: translateY(-5px);
     cursor: pointer;
-    transition: all 0.1s;
+    transition: all 0.2s;
 }
 
 #buttons {
@@ -234,9 +249,59 @@ tbody {
 }
 
 td {
-    padding: 5px;
+    padding: 5px 10px;
 }
 
 tr:nth-child(2n) {
     background-color: rgba(255, 255, 255, 0.1);
+}
+
+.program-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    border-radius: 12px;
+    width: 200px;
+    border: 1px solid rgba(255, 255, 255, 0.336);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.program-container:hover {
+    border: 1px solid rgba(255, 255, 255, 0.548);
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    transition: all 0.2s;
+}
+
+.program-container > img {
+    margin: 10px;
+    width: 140px;
+    aspect-ratio: 1/1;
+    filter: grayscale(1);
+    transition: all 0.2s;
+}
+
+.program-container > p {
+    max-width: 200px;
+    font-size: 16px;
+}
+
+.program-container > img[data-hovered="yes"] {
+    filter: grayscale(0);
+    transition: all 0.2s;
+}
+
+.program-container > h3 {
+    margin: 0 0 4px 0;
+}
+
+#software-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
