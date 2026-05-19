@@ -1,18 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>QR Code do Quizu</title>
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <div>
-            <img src="extended.png" />
-            <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScOfK74_TAx8fWUyIFpxPYBpa_FI9dUspLkGtUTQTS7cXu3nw/viewscore?viewscore=AE0zAgBn_LrhOBK95y1CujtqmmccFdFE-1GHkxfgk4yg1L0XJU_6QgqdpK3dpDHM97ivGl8"
-                >https://docs.google.com/forms/d/e/1FAIpQLScOfK74_TAx8fWUyIFpxPYBpa_FI9dUspLkGtUTQTS7cXu3nw/viewscore?viewscore=AE0zAgBn_LrhOBK95y1CujtqmmccFdFE-1GHkxfgk4yg1L0XJU_6QgqdpK3dpDHM97ivGl8</a
-            >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartian</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+</head>
+<body class="no-margin">
+    <div id="begin">
+        <img id="pfp" src="https://github.com/i5cmd.png" draggable="false">
+        <h1 class="no-margin">Kartian</h1>
+        <h3 class="no-margin light">i5cmd</h3>
+    </div>
+    <div id="buttons"></div>
+    <div id="educationsteps">
+        <div id="line"></div>
+    </div>
+    <section id="aboutme">
+        <h1 class="light no-margin sectiontitle">About me</h1>
+        <p class="no-margin p-size">hey, i'm kartian, i5cmd on programming sites. i'm from a small town in silesia (i wasn't born there, i ain't silesian). i'm a technical school student and i'm learning programming. i also treat coding as my hobby and, well, as you can see, i enjoy it pretty well. i try to make my code high quality. of course i understand that it'll take pretty much a long time to be in a final level of satisfaction but, in my case, i really enjoy learning new things, when it comes to programming (don't call me nerd, plz).<br>apart from programming i like reading mangas, usually good romcoms or simply comedies, that are popular (yeah, i'm not that niche, sorry), i mean i have azumanga daioh omnibus in poland, that's rare, i guess. i also like listening to music, and i mean yeah, everyone does, but i like jvbsucks tracks (for now, we'll see in 5 months lol). i was listening to HYPERYOUTH or NO HANDS while making that exact site, actually. wanna go to their concert at least once in my whole life. could be hard, since i'm polish, but maybe... well, at least i can hear em on [amazon music or apple music...] (speaking of which... gosh like i can't decide. amazon music is HELLA cheap for me but their apps just straightly sucks, doesn't even have captions man. and apple music is a bit more expensive and has mid windows app but fire android app, i love it.) <br> i like hiking (when there's a mountain peak to get on, only), cycling (i don't do it regularly, but has challenge to ride 70 km,  in WEIRD units it's about 43 miles). the peaks i (remember) got were Sniezka and Snieznik. these were the highest ones.</p>
+    </section>
+    <section id="second">
+        <h1 class="light no-margin sectiontitle">Music</h1>
+        <div id="albumContainer"></div>
+    </section>
+    <section id="hardware">
+        <h1 class="light no-margin sectiontitle">Hardware</h1>
+        <table>
+            <tr>
+                <td>Motherboard</td>
+                <td>MSI B840 GAMING PLUS WIFI</td>
+            </tr>
+            <tr>
+                <td>GPU</td>
+                <td>Acer Nitro Radeon RX 9060 XT OC 16GB GDDR6 128bit FSR</td>
+            </tr>
+            <tr>
+                <td>CPU</td>
+                <td>AMD Ryzen 5 9600X</td>
+            </tr>
+            <tr>
+                <td>RAM</td>
+                <td>KINGSTON Fury Beast RGB 32GB (2x16GB) DDR5 5600MT/s CL36</td>
+            </tr>
+            <tr>
+                <td>SSD</td>
+                <td>Kingston KC3000 1TB PCIe 4.0 NVMe</td>
+            </tr>
+            <tr>
+                <td>Power Supply</td>
+                <td>GIGABYTE UD750GM PG5 V2 750W 80 Plus Gold PCIe5.1 ATX3.1</td>
+            </tr>
+        </table>
+    </section>
+    <section id="software">
+        <h1 class="light no-margin sectiontitle">Software</h1>
+        <div id="software-container">
+            
         </div>
-    </body>
+    </section>
+    <script type="module" src="scripts/main.js"></script>
+</body>
 </html>
